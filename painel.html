@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+</head>
+<body>
+    <h1>Seja bem vindo</h1>
+
+    <button>Voltar</button>
+
+    <script>
+
+        var voltar = document.querySelector("button")
+
+        voltar.onclick = () => {
+            var confirm = window.confirm('Deseja realmente sair ?')
+            
+            if(confirm){
+                window.location.href = "./page1.html"
+            }
+        }
+    </script>
+</body>
+</html>
